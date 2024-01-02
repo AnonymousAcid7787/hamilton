@@ -1,3 +1,11 @@
+use bevy::{app::App, DefaultPlugins};
+use bevy_flycam::PlayerPlugin;
+
 fn main() {
-    println!("Hello, world!");
+    App::new()
+        .add_plugins((
+            DefaultPlugins,
+            PlayerPlugin,
+        ))
+        .run();
 }
